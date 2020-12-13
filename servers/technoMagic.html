@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="SHORTCUT ICON" href="../assets/images/mine_ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/servers/technoMagic.css">
+    <script src="../assets/scripts/list_servers.js" defer></script>
+    <title>EraCraft</title>
+</head>
+
+<body>
+    <div id="open__menu">
+        <img src="../assets/images/crest.png" alt="Скрыть меню" class="absolute__crest" onclick="closeMenu('open__menu');">
+        <a href="../index.html" class="open__menu__button open__menu__top_button">
+            Главная
+        </a>
+        <a href="../servers_list.html" class="open__menu__button">
+            Сервера
+        </a>
+        <a href="../services.html" class="open__menu__button">
+            Услуги
+        </a>
+        <a href="../rules.html" class="open__menu__button">
+            Правила
+        </a>
+        
+    </div>
+    <header>
+        <div class="intro">
+            <div class="wrap__logo__login">
+
+                <a class="intro__logo" href="../index.html">
+                    <img src="../assets/images/Logo.png" alt="Logo" class="logo">
+                </a>
+                <div class="wrap__login">
+                    <form action="#" class="login__form">
+
+                        <span class="login__form__title">Авторизация</span>
+
+                        <div class="wrap__input">
+                            <input class="input100" type="text" name="name" placeholder="Логин">
+                        </div>
+
+                        <div class="wrap__input">
+                            <input class="input100" type="password" name="pass" placeholder="Пароль">
+                        </div>
+                        <div class="container__form__btn" onmousedown="buttonDown('button');" onmouseout="buttonUp('button');"
+                            onmouseup="buttonUp('button');">
+                            <button class="form__btn" id="button">
+                                Войти
+                            </button>
+                        </div>
+                        <div class="container__text">
+                            <a href="../register_page.html" class="help__link"><span
+                                    class="register">Регистрация</span></a>
+                            <a href="../forget_pass.html" class="help__link"><span class="forget__pass">Забыли
+                                    пароль?</span></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <a href="../start_playing.html" class="left__btn__lnk">
+                    <div class="left__btn">
+                        НАЧАТЬ ИГРАТЬ
+                    </div>
+                </a>
+                <div class="right__menu">
+                    <a href="../index.html">
+                        <div class="navigation__btn">Главная</div>
+                    </a>
+                    <a href="../servers_list.html">
+                        <div class="navigation__btn">Сервера</div>
+                    </a>
+                    <a href="../services.html">
+                        <div class="navigation__btn">Услуги</div>
+                    </a>
+                    <a href="../rules.html" class="last__btn">
+                        <div class="navigation__btn">Правила</div>
+                    </a>
+                </div>
+                <a onclick="openMenu('open__menu');" class="header__burger">
+                    <span class="burger__line burger__line__first">
+
+                    </span>
+                    <span class="burger__line burger__line__second">
+
+                    </span>
+                    <span class="burger__line burger__line__third">
+
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+    <div class="content">
+        <div class="server__about__block">
+            <div class="server__about">
+                <div class="server__about__topic">
+                    <div class="server__about__image">
+                        <img src="../assets/images/TechnoMagicIco.png" alt="TechnoMagic" class="main__server__image">
+                    </div>
+                    <div class="server__about__text">
+                        <span class="server__about__text__title">
+                            TechnoMagic
+                        </span>
+                        <span class="server__about__text__content">
+                            Серверы с PVE режимом работающих на версии Minecraft 1.7.10, идеально совместившие в себе технические и магические моды, идеально подойдут игрокам, которые хотят играть на технических серверах, но не могут отказаться от магии. Хочется чего-то экстравагантного? Добро пожаловать на TechnoMagic!  
+                        </span>
+                    </div>
+                </div>
+                <div class="server__about__buttons">
+                    <a class="to__other__servers" href="../servers_list.html">
+                        К другим серверам
+                    </a>
+                    <a class="start__playing" href="../start_playing.html">
+                        Начать игру
+                    </a>
+                </div>
+            </div>
+            <div class="server__info">
+                <div class="server__info__item">
+                    <div class="server__info__item__left">
+                        <img src="../assets/images/version.png" alt="fork" class="server__info__item__icon">
+                        <span class="server__info__item__text1">
+                            Версия игры
+                        </span>
+                    </div>
+                    <div class="server__info__item__right">
+                        <span class="server__info__item__text2">
+                            Minecraft 1.7.10
+                        </span>
+                    </div>
+                </div>
+                <div class="server__info__item">
+                    <div class="server__info__item__left">
+                        <img src="../assets/images/size.png" alt="fork" class="server__info__item__icon">
+                        <span class="server__info__item__text1">
+                            Размер карты в обычном мире:
+                        </span>
+                    </div>
+                    <div class="server__info__item__right">
+                        <span class="server__info__item__text2">
+                            15000 на 15000 блоков (радиус)
+                        </span>
+                    </div>
+                </div>
+                <div class="server__info__item">
+                    <div class="server__info__item__left">
+                        <img src="../assets/images/size.png" alt="fork" class="server__info__item__icon">
+                        <span class="server__info__item__text1">
+                            Размер карты в аду:
+                        </span>
+                    </div>
+                    <div class="server__info__item__right">
+                        <span class="server__info__item__text2">
+                            10000 на 10000 блоков (радиус)
+                        </span>
+                    </div>
+                </div>
+                <div class="server__info__item">
+                    <div class="server__info__item__left">
+                        <img src="../assets/images/size.png" alt="fork" class="server__info__item__icon">
+                        <span class="server__info__item__text1">
+                            Размер карты в эндер мире:
+                        </span>
+                    </div>
+                    <div class="server__info__item__right">
+                        <span class="server__info__item__text2">
+                            неограничен
+                        </span>
+                    </div>
+                </div>
+                <div class="server__info__item">
+                    <div class="server__info__item__left">
+                        <img src="../assets/images/vipe.png" alt="fork" class="server__info__item__icon">
+                        <span class="server__info__item__text1">
+                            Дата последнего вайпа
+                        </span>
+                    </div>
+                    <div class="server__info__item__right">
+                        <span class="server__info__item__text2">
+                            14 ноября 2020
+                        </span>
+                    </div>
+                </div>
+                <div class="server__info__item">
+                    <div class="server__info__item__left">
+                        <img src="../assets/images/pvp.png" alt="fork" class="server__info__item__icon">
+                        <span class="server__info__item__text1">
+                            Режим PVP
+                        </span>
+                    </div>
+                    <div class="server__info__item__right">
+                        <span class="server__info__item__text2">
+                            Настраеваемый командой /pvp
+                        </span>
+                    </div>
+                </div>
+                <div class="server__info__item">
+                    <div class="server__info__item__left">
+                        <img src="../assets/images/warps.svg" alt="fork" class="server__info__item__icon">
+                        <span class="server__info__item__text1">
+                            Порталы доступны на варпе
+                        </span>
+                    </div>
+                    <div class="server__info__item__right">
+                        <span class="server__info__item__text2">
+                            Команда /warp portals
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mods__block">
+            <span class="mods__block__title">
+                Установленные модификации:
+            </span>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/biblioCraft.png"
+                        alt="BiblioCraft">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">    
+                        BiblioCraft
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация, добавляющая в игру различные предметы мебели, например, книжные шкафы, а также мерную ленту, служащую для измерения расстояния между блоками.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/biomesOPlenty.png"
+                        alt="Biomes O` Plenty">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">    
+                        Biomes O` Plenty
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация, расширяющая границы исследования и путешествий в Minecraft. Добавляет большое количество различных биомов земного типа, в стиле фэнтези, а также другие интересные вещи.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/ironChest.png"
+                        alt="Iron Chests">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">    
+                        Iron Chests
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация, которая добавляет улучшенные сундуки из различных материалов, таких, как металлы, алмазы и обсидиан.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/industrialCraft.png"
+                        alt="IndustrialCraft 2">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">    
+                        IndustrialCraft 2
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация для Minecraft, добавляющая промышленное производство: металлургию, электротехнику, агропромышленность, пивоварение. В модификации присутствуют различные виды энергии, новые устройства и инструменты.  
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/forestry.png"
+                        alt="Forestry">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">    
+                        Forestry
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация для Minecraft, добавляющая новые виды деревьев, предметов и механизмов. Особое внимание уделяется сельскому хозяйству, модификация предоставляет одну из крупнейших многоблочных структур, позволяющую создавать различные типы управляемых и ручных ферм. Forestry также добавляет пчёл, которые могут быть размещены в пчелиных домах, на пасеках или в огромных ульях. Пчёл можно выводить из различных видов, они будут давать различные преимущества для игрока. В свою очередь, эти пчелы могут использоваться для разведения деревьев, некоторые из них могут быть фруктовыми, фрукты можно использовать в качестве пищи. Различные породы деревьев в конечном итоге привлекают бабочек, которых также можно поймать и развести.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/thermalExpansion.png"
+                        alt="Thermal Expansion">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">    
+                        Thermal Expansion
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация, которая добавляет в игру новую механику обработки ресурсов, организацию автоматического производства, новые ресурсы, их обработчики, а также энергию и устройства её выработки и хранения.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/appliedEnergetic.gif"
+                        alt="Applied Energetics 2">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">    
+                        Applied Energetics 2
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация, содержащая большое количество нового контента, в основном сосредоточенного вокруг концепции использования и преобразования энергии уникальным способом.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/projectRed.png"
+                        alt="Project Red">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">    
+                        Project Red
+                    </div>
+                    <div class="mod__block__text__content">
+                        ProjectRed это мод от Mr_TJP и ChickenBones. Этот мод является неофициальным продолжением Redpower 2 мода, использует весь исходный код. Этот мод ориентирован на RedStone схемы, логистику, автоматизацию, декорирование и строительство крупных механизмов. Кроме того, он включает в себя собственную энергетическую систему, называемую Electrotine Power, которая требуется для работы различных машин из ProjectRed. 
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/extraUtilities.png"
+                        alt="Extra Utilities 2">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">    
+                        Extra Utilities 2
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация без определённой тематики, добавляющая различные полезные предметы и элементы, такие как трубы, генераторы и магические вещи.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/enderIO.png"
+                        alt="Ender IO">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">    
+                        Ender IO
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация, которая добавляет в игру различные машины, генераторы для производства RF-энергии, приборы для удалённого доступа к предметам, трубы для транспортировки и резервуары для хранения предметов, жидкостей, энергии, а также провода для передачи сигналов красного камня.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/draconicEvolution.png"
+                        alt="Draconic Evolution">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">    
+                        Draconic Evolution
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация, создаваемая brandon3055, которая добавляет новые мощные инструменты, броню, машины и различные элементы. Модификация базируется вокруг своего блока руды — дракониевой руды (которая генерируется в Обычном и Нижнем мире, а также в Крае). Используется энергия Redstone Flux из модификации Thermal Expansion. Также модификация добавляет ритуалы, исследования и многое другое.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/avaritia.png"
+                        alt="Avaritia">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">    
+                        Avaritia
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация, добавляющая множество очень мощных инструментов и предметов, с очень дорогими рецептами для их создания.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/thaumCraft.png"
+                        alt="Thaumcraft 4.3.2.5">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">    
+                        Thaumcraft 4.3.2.5
+                    </div>
+                    <div class="mod__block__text__content">
+                        Глобальная модификация для Minecraft, созданная Azanor, которая добавляет в игру магию.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/botania.png"
+                        alt="Botania">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">    
+                        Botania
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация, которая основывается на магической энергии, производимой цветами и прочей растительной жизнью.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a class="logo__link__main" href="#">
+        </a>
+        <div class="copyright">
+            <div class="copyright__up">© 2020 ERA CRAFT</div>
+            <div class="copyright__down">
+                <p class="copyright__text">
+                    Все права защищены. Копирование материалов сайта запрещено.
+                </p>
+                <p class="copyright__text">
+                    Мы предоставляем ознакомительный и бесплатный вариант игры Minecraft.
+                </p>
+                <p class="copyright__text">
+                    Приобрести полную версию можно на сайте <a href="https://www.minecraft.net/ru-ru"
+                        target="_blank">minecraft.net</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

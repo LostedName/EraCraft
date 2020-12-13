@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="SHORTCUT ICON" href="../assets/images/mine_ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/servers/classic.css">
+    <script src="../assets/scripts/list_servers.js" defer></script>
+    <title>EraCraft</title>
+</head>
+
+<body>
+    <div id="open__menu">
+        <img src="../assets/images/crest.png" alt="Скрыть меню" class="absolute__crest" onclick="closeMenu('open__menu');">
+        <a href="../index.html" class="open__menu__button open__menu__top_button">
+            Главная
+        </a>
+        <a href="../servers_list.html" class="open__menu__button">
+            Сервера
+        </a>
+        <a href="../services.html" class="open__menu__button">
+            Услуги
+        </a>
+        <a href="../rules.html" class="open__menu__button">
+            Правила
+        </a>
+        
+    </div>
+    <header>
+        <div class="intro">
+            <div class="wrap__logo__login">
+
+                <a class="intro__logo" href="../index.html">
+                    <img src="../assets/images/Logo.png" alt="Logo" class="logo">
+                </a>
+                <div class="wrap__login">
+                    <form action="#" class="login__form">
+
+                        <span class="login__form__title">Авторизация</span>
+
+                        <div class="wrap__input">
+                            <input class="input100" type="text" name="name" placeholder="Логин">
+                        </div>
+
+                        <div class="wrap__input">
+                            <input class="input100" type="password" name="pass" placeholder="Пароль">
+                        </div>
+                        <div class="container__form__btn" onmousedown="buttonDown('button');" onmouseout="buttonUp('button');"
+                            onmouseup="buttonUp('button');">
+                            <button class="form__btn" id="button">
+                                Войти
+                            </button>
+                        </div>
+                        <div class="container__text">
+                            <a href="../register_page.html" class="help__link"><span
+                                    class="register">Регистрация</span></a>
+                            <a href="../forget_pass.html" class="help__link"><span class="forget__pass">Забыли
+                                    пароль?</span></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <a href="../start_playing.html" class="left__btn__lnk">
+                    <div class="left__btn">
+                        НАЧАТЬ ИГРАТЬ
+                    </div>
+                </a>
+                <div class="right__menu">
+                    <a href="../index.html">
+                        <div class="navigation__btn">Главная</div>
+                    </a>
+                    <a href="../servers_list.html">
+                        <div class="navigation__btn">Сервера</div>
+                    </a>
+                    <a href="../services.html">
+                        <div class="navigation__btn">Услуги</div>
+                    </a>
+                    <a href="../rules.html" class="last__btn">
+                        <div class="navigation__btn">Правила</div>
+                    </a>
+                </div>
+                <a onclick="openMenu('open__menu');" class="header__burger">
+                    <span class="burger__line burger__line__first">
+
+                    </span>
+                    <span class="burger__line burger__line__second">
+
+                    </span>
+                    <span class="burger__line burger__line__third">
+
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+    <div class="content">
+        <div class="server__about__block">
+            <div class="server__about">
+                <div class="server__about__topic">
+                    <div class="server__about__image">
+                        <img src="../assets/images/ClassicIco.png" alt="Classic" class="main__server__image">
+                    </div>
+                    <div class="server__about__text">
+                        <span class="server__about__text__title">
+                            Classic
+                        </span>
+                        <span class="server__about__text__content">
+                            Классический PvP сервер для любителей эстетики и красивых построек, разбавленный
+                            декоративными модами Привык удивлять друзей волнующими воображение постройками? Тогда этот
+                            сервер подходит для тебя!
+                        </span>
+                    </div>
+                </div>
+                <div class="server__about__buttons">
+                    <a class="to__other__servers" href="../servers_list.html">
+                        К другим серверам
+                    </a>
+                    <a class="start__playing" href="../start_playing.html">
+                        Начать игру
+                    </a>
+                </div>
+            </div>
+            <div class="server__info">
+                <div class="server__info__item">
+                    <div class="server__info__item__left">
+                        <img src="../assets/images/version.png" alt="fork" class="server__info__item__icon">
+                        <span class="server__info__item__text1">
+                            Версия игры
+                        </span>
+                    </div>
+                    <div class="server__info__item__right">
+                        <span class="server__info__item__text2">
+                            Minecraft 1.7.10
+                        </span>
+                    </div>
+                </div>
+                <div class="server__info__item">
+                    <div class="server__info__item__left">
+                        <img src="../assets/images/size.png" alt="fork" class="server__info__item__icon">
+                        <span class="server__info__item__text1">
+                            Размер карты в обычном мире:
+                        </span>
+                    </div>
+                    <div class="server__info__item__right">
+                        <span class="server__info__item__text2">
+                            15000 на 15000 блоков (радиус)
+                        </span>
+                    </div>
+                </div>
+                <div class="server__info__item">
+                    <div class="server__info__item__left">
+                        <img src="../assets/images/size.png" alt="fork" class="server__info__item__icon">
+                        <span class="server__info__item__text1">
+                            Размер карты в аду:
+                        </span>
+                    </div>
+                    <div class="server__info__item__right">
+                        <span class="server__info__item__text2">
+                            10000 на 10000 блоков (радиус)
+                        </span>
+                    </div>
+                </div>
+                <div class="server__info__item">
+                    <div class="server__info__item__left">
+                        <img src="../assets/images/size.png" alt="fork" class="server__info__item__icon">
+                        <span class="server__info__item__text1">
+                            Размер карты в эндер мире:
+                        </span>
+                    </div>
+                    <div class="server__info__item__right">
+                        <span class="server__info__item__text2">
+                            неограничен
+                        </span>
+                    </div>
+                </div>
+                <div class="server__info__item">
+                    <div class="server__info__item__left">
+                        <img src="../assets/images/vipe.png" alt="fork" class="server__info__item__icon">
+                        <span class="server__info__item__text1">
+                            Дата последнего вайпа
+                        </span>
+                    </div>
+                    <div class="server__info__item__right">
+                        <span class="server__info__item__text2">
+                            13 сентября 2020
+                        </span>
+                    </div>
+                </div>
+                <div class="server__info__item">
+                    <div class="server__info__item__left">
+                        <img src="../assets/images/pvp.png" alt="fork" class="server__info__item__icon">
+                        <span class="server__info__item__text1">
+                            Режим PVP
+                        </span>
+                    </div>
+                    <div class="server__info__item__right">
+                        <span class="server__info__item__text2">
+                            Настраеваемый командой /pvp
+                        </span>
+                    </div>
+                </div>
+                <div class="server__info__item">
+                    <div class="server__info__item__left">
+                        <img src="../assets/images/warps.svg" alt="fork" class="server__info__item__icon">
+                        <span class="server__info__item__text1">
+                            Порталы доступны на варпе
+                        </span>
+                    </div>
+                    <div class="server__info__item__right">
+                        <span class="server__info__item__text2">
+                            Команда /warp portals
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mods__block">
+            <span class="mods__block__title">
+                Установленные модификации:
+            </span>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/biblioCraft.png"
+                        alt="BiblioCraft" class="mod__image">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">
+                        Bibliocraft
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация, добавляющая в игру различные предметы мебели, например, книжные шкафы, а также
+                        мерную ленту, служащую для измерения расстояния между блоками.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/chisel.png"
+                        alt="Chisel">
+                    </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">
+                        Chisel
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация, добавляющая в игру стамеску, с помощью которой можно создавать разные декоративные
+                        версии одного и того же блока.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/chiselBits.png"
+                        alt="Chisels & Bits">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">
+                        Chisels & Bits
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация добавляет в игру инструменты, с помощью которых вы сможете создать любой предмет,
+                        будь это стул, стол или какая-нибудь статуя.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/ironChest.png"
+                        alt="Iron Chests">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">
+                        Iron Chests
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация, которая добавляет улучшенные сундуки из различных материалов, таких, как металлы,
+                        алмазы и обсидиан.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/growthCraft.png"
+                        alt="GrowthCraft">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">
+                        GrowthCraft
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация, в основном, добавляет в игру различные улучшения для занятий сельским хозяйством и
+                        производства продуктов питания.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/harvestCraft.png"
+                        alt="Pam's Harvestcraft">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">
+                        Pam's Harvestcraft
+                    </div>
+                    <div class="mod__block__text__content">
+                        HarvestCraft добавляет различные культуры, одни из них нужно собирать и пересаживать заново,
+                        другие можно просто собирать раз за разом, а некоторые вообще растут на деревьях. Вы также
+                        сможете создавать различные кухонные принадлежности, выращивать растения и готовить гигантское
+                        количество блюд которых вы никогда не встретите в обычном Minecraft.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/animania.png"
+                        alt="Animania" >
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">
+                        Animania
+                    </div>
+                    <div class="mod__block__text__content">
+                        Захватывающий мод, который заменяет и улучшает пассивных животных в Minecraft, добавляя
+                        различные пароды, половую пренадлежность, новое поведение а так же несколько новых видов
+                        животных.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/roguelikeDungeons.png"
+                        alt="Roguelike Dungeons">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">
+                        Roguelike Dungeons
+                    </div>
+                    <div class="mod__block__text__content">
+                        Модификация, добавляющая в игру множество новых данжей, наполненных различными лабиринтами и
+                        монстрами.
+                    </div>
+                </div>
+            </div>
+            <div class="mod__block">
+                <div class="mod__block__img">
+                    <img class="block__img"
+                        src="../assets/images/mods_icons/yungBetterCaves.png"
+                        alt="YUNG's Better Caves">
+                </div>
+                <div class="mod__block__text">
+                    <div class="mod__block__text__title">
+                        YUNG's Better Caves
+                    </div>
+                    <div class="mod__block__text__content">
+                        Добавляет более развитую и логичную систему пещер в мировую генерацию
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a class="logo__link__main" href="#">
+        </a>
+        <div class="copyright">
+            <div class="copyright__up">© 2020 ERA CRAFT</div>
+            <div class="copyright__down">
+                <p class="copyright__text">
+                    Все права защищены. Копирование материалов сайта запрещено.
+                </p>
+                <p class="copyright__text">
+                    Мы предоставляем ознакомительный и бесплатный вариант игры Minecraft.
+                </p>
+                <p class="copyright__text">
+                    Приобрести полную версию можно на сайте <a href="https://www.minecraft.net/ru-ru"
+                        target="_blank">minecraft.net</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+.content{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+.content__block{
+    display:flex;
+    justify-content: center;
+    width:80%;
+    border-radius: 10px;
+}
+.content__block__donate{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:1030px;
+    background-color: rgb(240, 255, 240);
+    border-radius: 5px;
+    border: 2px solid rgb(27, 155, 23);
+    box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.5);
+    margin:10px 0;
+}
+.content__block__header{
+    font-size:40px;
+    font-weight: 700;
+    font-family: montserrat,sans-serif;
+    color: rgb(51, 51, 51);
+    padding:15px 0 25px 100px;
+    
+}
+.content__block__image{
+    width:100%;
+    height:320px;
+    background: url("../images/service_image2.jpg") center no-repeat;
+    background-size: 100% 100%;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+}
+.content__text__wrap{
+    display:flex;
+    flex-direction: column;
+    padding:20px 20px 20px 20px;
+}
+.content__block__text{
+    font-family: montserrat,sans-serif;
+    font-size:18px;
+    color: #343434;
+    padding:5px 10px 10px 20px;
+}
+.button__charity{
+    display: inline-block;
+    background-color: rgb(18, 146, 39);
+    width:270px;
+    height:80px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+    color:#ececec;
+    font-size: 26px;
+    font-weight: 900;
+    margin:0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 3px solid green;
+    transition: background-color .2s linear,color .2s linear;
+
+}
+.button__charity:hover{
+    color:rgb(238, 238, 238);
+    background-color: rgb(25, 175, 50);
+    transition: background-color .2s linear,color .2s linear;
+}
+.thanks{
+
+    font-weight: bold;
+    background: url("../images/heart-whole.png") right no-repeat;
+    background-size: 20px 20px;
+    width:250px;
+    margin:0 auto;
+margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px){
+    .content__block__donate{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(240, 255, 240);
+        border-radius: 5px;
+        border: 2px solid rgb(27, 155, 23);
+        box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.5);
+        margin:10px 0;
+    }
+    .content__block__header{
+        font-size:35px;
+        font-weight: 700;
+        font-family: montserrat,sans-serif;
+        color: rgb(51, 51, 51);
+        padding:15px 0 25px 100px;
+        
+    }
+    .content__block__image{
+        width:100%;
+        height:320px;
+        background: url("../images/service_image2.jpg") center no-repeat;
+        background-size: 100% 100%;
+        border-top: 2px solid green;
+        border-bottom: 2px solid green;
+    }
+    .content__text__wrap{
+        display:flex;
+        flex-direction: column;
+        padding:20px 20px 20px 20px;
+    }
+    .content__block__text{
+        font-family: montserrat,sans-serif;
+        font-size:17px;
+        color: #343434;
+        padding:5px 10px 10px 20px;
+    }
+    .button__charity{
+        display: inline-block;
+        background-color: rgb(18, 146, 39);
+        width:240px;
+        height:70px;
+        line-height: 60px;
+        text-align: center;
+        text-decoration: none;
+        color:#ececec;
+        font-size: 23px;
+        font-weight: 700;
+        margin:0 auto;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border: 3px solid green;
+        transition: background-color .2s linear,color .2s linear;
+    
+    }
+    .thanks{
+    
+        font-weight: bold;
+        background: url("../images/heart-whole.png") right no-repeat;
+        background-size: 20px 20px;
+        width:235px;
+        margin:0 auto;
+        margin-bottom: 10px;
+        font-size:17px;
+    }
+}
+
+@media screen and (max-width:1005px){
+
+
+    .content__block__image{
+        width:100%;
+        height:300px;
+        background: url("../images/service_image2.jpg") center no-repeat;
+        background-size: 100% 100%;
+        border-top: 2px solid green;
+        border-bottom: 2px solid green;
+    }
+}
+@media screen and (max-width:880px){
+
+
+    .content__block__image{
+        width:100%;
+        height:280px;
+        background: url("../images/service_image2.jpg") center no-repeat;
+        background-size: 100% 100%;
+        border-top: 2px solid green;
+        border-bottom: 2px solid green;
+    }
+}
+@media screen and (max-width:750px){
+
+    .content__block__header{
+        font-size:32px;
+        font-weight: 700;
+        font-family: montserrat,sans-serif;
+        color: rgb(51, 51, 51);
+        padding:15px 0 25px 100px;
+        
+    }
+    .content__block__image{
+        width:100%;
+        height:260px;
+        background: url("../images/service_image2.jpg") center no-repeat;
+        background-size: 100% 100%;
+        border-top: 2px solid green;
+        border-bottom: 2px solid green;
+    }
+    .content__text__wrap{
+        display:flex;
+        flex-direction: column;
+        padding:15px 20px 15px 15px;
+    }
+    .content__block__text{
+        font-family: montserrat,sans-serif;
+        font-size:16px;
+        color: #343434;
+        padding:5px 10px 10px 20px;
+    }
+    .button__charity{
+        display: inline-block;
+        background-color: rgb(18, 146, 39);
+        width:200px;
+        height:50px;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
+        color:#ececec;
+        font-size: 19px;
+        font-weight: 700;
+        margin:0 auto;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border: 3px solid green;
+        transition: background-color .2s linear,color .2s linear;
+    
+    }
+    .thanks{
+    
+        font-weight: bold;
+        background: url("../images/heart-whole.png") right no-repeat;
+        background-size: 20px 20px;
+        width:225px;
+        margin:0 auto;
+        margin-bottom: 8px;
+        font-size:16px;
+    }
+}
+
+@media screen and (max-width:690px){
+
+
+    .content__block__image{
+        width:100%;
+        height:230px;
+        background: url("../images/service_image2.jpg") center no-repeat;
+        background-size: 100% 100%;
+        border-top: 2px solid green;
+        border-bottom: 2px solid green;
+    }
+}
+@media screen and (max-width:600px){
+
+
+    .content__block__image{
+        width:100%;
+        height:200px;
+        background: url("../images/service_image2.jpg") center no-repeat;
+        background-size: 100% 100%;
+        border-top: 2px solid green;
+        border-bottom: 2px solid green;
+    }
+    .content__block__header{
+        font-size:28px;
+        font-weight: 700;
+        font-family: montserrat,sans-serif;
+        color: rgb(51, 51, 51);
+        padding:15px 0 25px 40px;
+        
+    }
+    .content__text__wrap{
+        display:flex;
+        flex-direction: column;
+        padding:10px 15px 10px 10px;
+    }
+    .content__block__text{
+        font-family: montserrat,sans-serif;
+        font-size:15px;
+        color: #343434;
+        padding:5px 10px 8px 20px;
+    }
+    .button__charity{
+        display: inline-block;
+        background-color: rgb(18, 146, 39);
+        width:180px;
+        height:40px;
+        line-height: 30px;
+        text-align: center;
+        text-decoration: none;
+        color:#ececec;
+        font-size: 17px;
+        font-weight: 700;
+        margin:0 auto;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border: 3px solid green;
+        transition: background-color .2s linear,color .2s linear;
+    
+    }
+    .thanks{
+    
+        font-weight: bold;
+        background: url("../images/heart-whole.png") right no-repeat;
+        background-size: 20px 20px;
+        width:210px;
+        margin:0 auto;
+        margin-bottom: 8px;
+        font-size:14px;
+    }
+}
+@media screen and (max-width:500px){
+
+
+    .content__block__image{
+        width:100%;
+        height:145px;
+        background: url("../images/service_image2.jpg") center no-repeat;
+        background-size: 100% 100%;
+        border-top: 2px solid green;
+        border-bottom: 2px solid green;
+    }
+    .content__block__header{
+        font-size:25px;
+        font-weight: 700;
+        font-family: montserrat,sans-serif;
+        color: rgb(51, 51, 51);
+        padding:10px 0 15px 40px;
+        
+    }
+    .content__text__wrap{
+        display:flex;
+        flex-direction: column;
+        padding:8px 15px 8px 10px;
+    }
+    .content__block__text{
+        font-family: montserrat,sans-serif;
+        font-size:14px;
+        color: #343434;
+        padding:5px 10px 8px 15px;
+    }
+    .button__charity{
+        display: inline-block;
+        background-color: rgb(18, 146, 39);
+        width:170px;
+        height:35px;
+        line-height: 25px;
+        text-align: center;
+        text-decoration: none;
+        color:#ececec;
+        font-size: 16px;
+        font-weight: 700;
+        margin:0 auto;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border: 3px solid green;
+        transition: background-color .2s linear,color .2s linear;
+    
+    }
+    .thanks{
+    
+        font-weight: bold;
+        background: url("../images/heart-whole.png") right no-repeat;
+        background-size: 20px 20px;
+        width:200px;
+        margin:0 auto;
+        margin-bottom: 8px;
+        font-size:13.5px;
+    }
+}

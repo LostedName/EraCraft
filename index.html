@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="SHORTCUT ICON" href="assets/images/mine_ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/scripts/list_servers.js" defer></script>
+    <title>EraCraft</title>
+</head>
+
+<body>
+    <div id="open__menu">
+        <img src="assets/images/crest.png" alt="Скрыть меню" class="absolute__crest" onclick="closeMenu('open__menu');">
+        <a href="index.html" class="open__menu__button open__menu__top_button">
+            Главная
+        </a>
+        <a href="servers_list.html" class="open__menu__button">
+            Сервера
+        </a>
+        <a href="services.html" class="open__menu__button">
+            Услуги
+        </a>
+        <a href="rules.html" class="open__menu__button">
+            Правила
+        </a>
+        
+    </div>
+    <header>
+        <div>
+        <div class="intro">
+            <div class="wrap__logo__login">
+
+                <a class="intro__logo" href="index.html">
+                    <img src="assets/images/Logo.png" alt="Logo" class="logo">
+                </a>
+                <div class="wrap__login">
+                    <form action="#" class="login__form">
+
+                        <span class="login__form__title">Авторизация</span>
+
+                        <div class="wrap__input">
+                            <input class="input100" type="text" name="name" placeholder="Логин">
+                        </div>
+
+                        <div class="wrap__input">
+                            <input class="input100" type="password" name="pass" placeholder="Пароль">
+                        </div>
+                        <div class="container__form__btn" onmousedown="buttonDown('button');" onmouseout="buttonUp('button');"
+                            onmouseup="buttonUp('button');">
+                            <button class="form__btn" id="button">
+                                Войти
+                            </button>
+                        </div>
+                        <div class="container__text">
+                            <a href="register_page.html" class="help__link"><span class="register">Регистрация</span></a>
+                            <a href="forget_pass.html" class="help__link"><span class="forget__pass">Забыли пароль?</span></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <a href="start_playing.html" class="left__btn__lnk">
+                    <div class="left__btn">
+                        НАЧАТЬ ИГРАТЬ
+                    </div>
+                </a>
+                <div class="right__menu">
+                    <a href="index.html">
+                        <div class="navigation__btn active__btn">Главная</div>
+                    </a>
+                    <a href="servers_list.html">
+                        <div class="navigation__btn">Сервера</div>
+                    </a>
+                    <a href="services.html">
+                        <div class="navigation__btn">Услуги</div>
+                    </a>
+                    <a href="rules.html" class="last__btn">
+                        <div class="navigation__btn">Правила</div>
+                    </a>
+                    
+                </div>
+                <a onclick="openMenu('open__menu');" class="header__burger">
+                    <span class="burger__line burger__line__first">
+
+                    </span>
+                    <span class="burger__line burger__line__second">
+
+                    </span>
+                    <span class="burger__line burger__line__third">
+
+                    </span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+    
+    <div class="content">
+        <div class="content__news">
+            <div class="news__item">
+                <div class="news__item__header">
+                    Открытие сервера
+                </div>
+                <div class="news__item__img">
+                </div>
+                <div class="news__item__content">
+                    <p class="news__item__content__text">
+                        Добро пожаловать на наш сервер, мы рады приветствовать вас на нашем проекте и желаем приятного
+                        времяпрепровождения.
+                    </p>
+                </div>
+                <div class="news__item__footer">
+                    <span class="news__item__footer__author">Администратор</span>
+                    <span class="news__item__footer__date">21-11-2020</span>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="content__menu">
+            <div class="content__menu__header">
+                Наши сервера
+            </div>
+            <div class="content__menu__servers">
+                <div class="content__menu__server__item">
+                    <div class="server__logoinf">
+                        <div class="server__logotext">
+                            Classic
+                        </div>
+                        <div class="server__count">
+                            75 из 100
+                        </div>
+                        <div class="server__graphics">
+                            <div class="graphics__online classic__server"></div>
+                        </div>
+                    </div>
+                    <div class="server__list" onclick="openList('Classic');">
+                        <div class="server__list__link">
+                            <span class="server__list__text">
+                                1
+                            </span>
+                        </div>
+                    </div>
+                    <div class="server__info">
+                        <a class="server__info__link" href="servers/classic.html">
+                            <span class="server__info__text">
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="content__menu__server__item__open" id="Classic">
+                    <div class="server__item__open__content">
+                        <div class="server__item__open__content__item">
+                            <div class="content__item__image">
+                                <img src="assets/images/classic.png" alt="Classic" height="23">
+                            </div>
+                            <div class="content__item__text">
+                                Classic
+                            </div>
+                            <div class="content__item__count">
+                                <span class="content__item__count__text">
+                                    75
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="content__menu__server__item">
+                    <div class="server__logoinf">
+                        <div class="server__logotext">
+                            MagicRPG
+                        </div>
+                        <div class="server__count">
+                            110 из 200
+                        </div>
+                        <div class="server__graphics">
+                            <div class="graphics__online magicRPG__server"></div>
+                        </div>
+                    </div>
+                    <div class="server__list" onclick="openList('MagicRPG');">
+                        <div class="server__list__link">
+                            <span class="server__list__text">
+                                2
+                            </span>
+                        </div>
+                    </div>
+                    <div class="server__info">
+                        <a class="server__info__link" href="servers/magicRPG.html">
+                            <span class="server__info__text">
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="content__menu__server__item__open" id="MagicRPG">
+                    <div class="server__item__open__content">
+                        <div class="server__item__open__content__item">
+                            <div class="content__item__image">
+                                <img src="assets/images/magicRPG.png" alt="MagicRPG" height="23">
+                            </div>
+                            <div class="content__item__text">
+                                MagicRPG #1
+                            </div>
+                            <div class="content__item__count">
+                                <span class="content__item__count__text">
+                                    75
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="server__item__open__content__item">
+                            <div class="content__item__image">
+                                <img src="assets/images/magicRPG.png" alt="MagicRPG" height="23">
+                            </div>
+                            <div class="content__item__text">
+                                MagicRPG #2
+                            </div>
+                            <div class="content__item__count">
+                                <span class="content__item__count__text">
+                                    35
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="content__menu__server__item">
+                    <div class="server__logoinf">
+                        <div class="server__logotext">
+                            Industrial
+                        </div>
+                        <div class="server__count">
+                            130 из 200
+                        </div>
+                        <div class="server__graphics">
+                            <div class="graphics__online industrial__server"></div>
+                        </div>
+                    </div>
+                    <div class="server__list" onclick="openList('Industrial');">
+                        <div class="server__list__link">
+                            <span class="server__list__text">
+                                2
+                            </span>
+                        </div>
+                    </div>
+                    <div class="server__info">
+                        <a class="server__info__link" href="servers/industrial.html">
+                            <span class="server__info__text">
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="content__menu__server__item__open" id="Industrial">
+                    <div class="server__item__open__content">
+                        <div class="server__item__open__content__item">
+                            <div class="content__item__image">
+                                <img src="assets/images/industrial.png" alt="Industrial" height="23">
+                            </div>
+                            <div class="content__item__text">
+                                Industrial #1
+                            </div>
+                            <div class="content__item__count">
+                                <span class="content__item__count__text">
+                                    70
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="server__item__open__content__item">
+                            <div class="content__item__image">
+                                <img src="assets/images/industrial.png" alt="Industrial" height="23">
+                            </div>
+                            <div class="content__item__text">
+                                Industrial #2
+                            </div>
+                            <div class="content__item__count">
+                                <span class="content__item__count__text">
+                                    60
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="content__menu__server__item">
+                    <div class="server__logoinf">
+                        <div class="server__logotext">
+                            TechnoMagic
+                        </div>
+                        <div class="server__count">
+                            184 из 200
+                        </div>
+                        <div class="server__graphics">
+                            <div class="graphics__online technoMagic__server"></div>
+                        </div>
+                    </div>
+                    <div class="server__list" onclick="openList('TechnoMagic');">
+                        <div class="server__list__link">
+                            <span class="server__list__text">
+                                2
+                            </span>
+                        </div>
+                    </div>
+                    <div class="server__info">
+                        <a class="server__info__link" href="servers/technoMagic.html">
+                            <span class="server__info__text">
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="content__menu__server__item__open" id="TechnoMagic">
+                    <div class="server__item__open__content">
+                        <div class="server__item__open__content__item">
+                            <div class="content__item__image">
+                                <img src="assets/images/technoMagic.png" alt="TechnoMagic" height="23">
+                            </div>
+                            <div class="content__item__text">
+                                TechnoMagic #1
+                            </div>
+                            <div class="content__item__count">
+                                <span class="content__item__count__text">
+                                    100
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="server__item__open__content__item">
+                            <div class="content__item__image">
+                                <img src="assets/images/technoMagic.png" alt="TechnoMagic" height="23">
+                            </div>
+                            <div class="content__item__text">
+                                TechnoMagic #2
+                            </div>
+                            <div class="content__item__count">
+                                <span class="content__item__count__text">
+                                    85
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <a class="logo__link__main" href="#">
+        </a>
+        <div class="copyright">
+            <div class="copyright__up">© 2020 ERA CRAFT</div>
+            <div class="copyright__down">
+                <p class="copyright__text">
+                    Все права защищены. Копирование материалов сайта запрещено.
+                </p>
+                <p class="copyright__text">
+                    Мы предоставляем ознакомительный и бесплатный вариант игры Minecraft.
+                </p>
+                <p class="copyright__text">
+                    Приобрести полную версию можно на сайте <a href="https://www.minecraft.net/ru-ru" target="_blank">minecraft.net</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

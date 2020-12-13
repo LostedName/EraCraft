@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="SHORTCUT ICON" href="assets/images/mine_ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/rules.css">
+    <script src="assets/scripts/list_servers.js" defer></script>
+    <title>EraCraft</title>
+</head>
+
+<body>
+    <div id="open__menu">
+        <img src="assets/images/crest.png" alt="Скрыть меню" class="absolute__crest" onclick="closeMenu('open__menu');">
+        <a href="index.html" class="open__menu__button open__menu__top_button">
+            Главная
+        </a>
+        <a href="servers_list.html" class="open__menu__button">
+            Сервера
+        </a>
+        <a href="services.html" class="open__menu__button">
+            Услуги
+        </a>
+        <a href="rules.html" class="open__menu__button">
+            Правила
+        </a>
+        
+    </div>
+    <header>
+        <div class="intro">
+            <div class="wrap__logo__login">
+
+                <a class="intro__logo" href="index.html">
+                    <img src="assets/images/Logo.png" alt="Logo" class="logo">
+                </a>
+                <div class="wrap__login">
+                    <form action="#" class="login__form">
+
+                        <span class="login__form__title">Авторизация</span>
+
+                        <div class="wrap__input">
+                            <input class="input100" type="text" name="name" placeholder="Логин">
+                        </div>
+
+                        <div class="wrap__input">
+                            <input class="input100" type="password" name="pass" placeholder="Пароль">
+                        </div>
+                        <div class="container__form__btn" onmousedown="buttonDown('button');"
+                            onmouseout="buttonUp('button');" onmouseup="buttonUp('button');">
+                            <button class="form__btn" id="button">
+                                Войти
+                            </button>
+                        </div>
+                        <div class="container__text">
+                            <a href="register_page.html" class="help__link"><span
+                                    class="register">Регистрация</span></a>
+                            <a href="forget_pass.html" class="help__link"><span class="forget__pass">Забыли
+                                    пароль?</span></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <a href="start_playing.html" class="left__btn__lnk">
+                    <div class="left__btn">
+                        НАЧАТЬ ИГРАТЬ
+                    </div>
+                </a>
+                <div class="right__menu">
+                    <a href="index.html">
+                        <div class="navigation__btn">Главная</div>
+                    </a>
+                    <a href="servers_list.html">
+                        <div class="navigation__btn">Сервера</div>
+                    </a>
+                    <a href="services.html">
+                        <div class="navigation__btn">Услуги</div>
+                    </a>
+                    <a href="rules.html" class="last__btn">
+                        <div class="navigation__btn active__btn">Правила</div>
+                    </a>
+                </div>
+                <a onclick="openMenu('open__menu');" class="header__burger">
+                    <span class="burger__line burger__line__first">
+
+                    </span>
+                    <span class="burger__line burger__line__second">
+
+                    </span>
+                    <span class="burger__line burger__line__third">
+
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+    <div class="content">
+        <div class="rules__container">
+            <div class="rules__container__header">Основные правила</div>
+            <div class="rules__container__block">
+                <div class="rules__container__block__container">
+
+                    <div class="rules__container__block__header">
+                        Общие правила проекта
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                1.1
+                            </div>
+                            <div class="block__content__text">
+                                Регистрируя аккаунт на нашем проекте,<b>пользователь</b>
+                                подтверждает свою ознакомленность и согласие с нижеизложенными положениями и правилами
+                                игры,
+                                <b>пользователь</b> подтверждает согласие на сбор и обработку неперсонализированных
+                                технических данных, а также данных, присущих особенностям функционирования в сети
+                                Интернет.
+                                <b>Пользователь</b> подтверждает, что незнание им (пользователем) правил не освобождает
+                                его
+                                (пользователя) от ответственности.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            Администрация проекта оставляет за собой право изменять любые пункты правил без оповещения и
+                            предупреждения игроков.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+
+                            <div class="block__content__number">
+                                1.2
+                            </div>
+                            <div class="block__content__text">
+                                Проект является бесплатной и некоммерческой структурой, предоставляющей игровые услуги.
+                                Любая финансовая поддержка пользователем осуществляется на добровольной основе и идет на
+                                улучшение качества предоставляемых услуг. Возврат пожертвованных средств не
+                                предусматривается ни при каких условиях.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+
+                            <div class="block__content__number">
+                                1.3
+                            </div>
+                            <div class="block__content__text">
+                                <b>Пользователь</b> несет ответственность за безопасность своего аккаунта и обязуется
+                                соблюдать все надлежащие меры по обеспечению его безопасности.
+                                Независимо от того, кем были совершены действия на аккаунте, ответственность всегда
+                                несет
+                                его владелец.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            Администрация проекта оставляет за собой право отказать в восстановлении доступа к аккаунту
+                            в случае взлома.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+
+                            <div class="block__content__number">
+                                1.4
+                            </div>
+                            <div class="block__content__text">
+                                Администрация имеет право вмешиваться в игровой процесс в любое время и действовать “по
+                                ситуации” в том случае, если сочтет это необходимым.
+                                В спорных ситуациях последнее слово остается за администрацией проекта.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            Под “администрацией проекта” подразумеваются помощники администратора и основатель проекта.
+                            Они полностью отвечают за правила и игровой процесс. </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+
+                            <div class="block__content__number">
+                                1.5
+                            </div>
+                            <div class="block__content__text">
+                                Администрация и модерация проекта не несут ответственности и ни при каких условиях не
+                                обязаны возвращать игрокам ресурсы или игровую валюту, утраченные в ходе обмана,
+                                гриферства,
+                                отката, бага, дюпа, читерства, взлома и обмена без модератора.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+
+                            <div class="block__content__number">
+                                1.6
+                            </div>
+                            <div class="block__content__text">
+                                Перенос привилегий может быть осуществлен при условии, что игровые пакеты ресурсов не
+                                были
+                                использованы, а с момента приобретения прошло не более 24 часов.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+
+                            <div class="block__content__number">
+                                1.7
+                            </div>
+                            <div class="block__content__text">
+                                Любые сторонние ресурсы связи, к примеру, ВКонтакте или Discord не имеют никакого
+                                отношения
+                                к игровому процессу и доказательства, основанные на этом, не рассматриваются.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rules__container__block__container">
+
+                    <div class="rules__container__block__header">
+                        Правила чата
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                2.1
+                            </div>
+                            <div class="block__content__text">
+                                Регистрируя аккаунт на нашем проекте,<b>пользователь</b>
+                                подтверждает свою ознакомленность и согласие с нижеизложенными положениями и правилами
+                                игры,
+                                <b>пользователь</b> подтверждает согласие на сбор и обработку неперсонализированных
+                                технических данных, а также данных, присущих особенностям функционирования в сети
+                                Интернет.
+                                <b>Пользователь</b> подтверждает, что незнание им (пользователем) правил не освобождает
+                                его
+                                (пользователя) от ответственности.
+                            </div>
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата на 1 час.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                2.2
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено писать сообщения, не несущие смысловой нагрузки.
+                            </div>
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата на 15 минут.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                2.3
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено писать идентичные и одинаковые по смыслу сообщения, а также использовать более
+                                пяти повторяющихся символов или букв подряд в одном сообщении.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> если на ваш вопрос не поступило ответа, то скорее всего на момент его
+                            отправки на сервере нет игроков, которые могут дать на него ответ. Большая часть информации
+                            по игровому процессу находится в интернете в свободном доступе, её без труда можно найти
+                            самому.
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата от 15 минут до 6 часов.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                2.4
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено агрессивное общение, провокации игроков, насмешки и различные угрозы. </div>
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата от 1 часа до 6 часов.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                2.5
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено выпрашивать, просить в долг ресурсы и валюту. </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> фраза "у кого есть лишние ресурсы" и ей подобные рассчитываются как
+                            нарушения данного правила. Если вы хотите приобрести какую-либо вещь, то пишите об этом в
+                            торговый чат.
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата на 15 минут.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                2.6
+                            </div>
+                            <div class="block__content__text">
+                                Запрещён флуд переводами эконов, запросами на телепортацию и уведомлениями через
+                                ChestShop.
+                            </div>
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> тюрьма на 30 минут.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                2.7
+                            </div>
+                            <div class="block__content__text">
+                                Запрещается любое использование капса (верхнего регистра) в сообщениях. </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Исключения:</b> имена собственные, заглавные буквы, аббревиатуры, текстовые смайлы и две
+                            первые буквы в начале предложения (Пример: ПРивет)
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата на 30 минут.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                2.8
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено представляться администрацией или модерацией проекта, распространять ложную
+                                информацию про них и проект. </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> распространение информации про вайп, кроме той, что написана в группе
+                            ВКонтакте или на сайте, является нарушением данного пункта.
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата на 1 час.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                2.9
+                            </div>
+                            <div class="block__content__text">
+                                Запрещены множественные нарушения правил, по которым выдаются предупреждения. </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> наказание выдаётся без предупреждения!
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата от 30 минут до 6 часов.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                2.10
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено использование ненормативной лексики.
+                                К ненормативной лексике относятся маты на любых языках; завуалированные маты; грубые,
+                                бранные и оскорбительные выражения, выходящие за рамки культурного общения.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> наказание выдаётся без предупреждения!
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата от 30 минут до 1 дня.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                2.10.1
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено оскорблять игроков и унижать их человеческое достоинство.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> наказание выдаётся без предупреждения!
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата от 1 часа до 1 дня. Наказание может быть увеличено до 7
+                            дней в зависимости от серьезности нарушения.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                2.10.2
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено писать сообщения эротического характера.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> наказание выдаётся без предупреждения!
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата на 1 час.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                3.1
+                            </div>
+                            <div class="block__content__text">
+                                Запрещается любое оскорбление или упоминание родственников игроков проекта в
+                                оскорбительной форме.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> наказание выдаётся без предупреждения!
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата от 7 дней до 14 дней.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                3.2
+                            </div>
+                            <div class="block__content__text">
+                                Любые сообщения по теме услуг и торговли можно отправлять только в торговый чат.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> если ваше объявление не помещается в одно сообщение, то
+                            пытайтесь его сократить. Дополнить свое рекламное сообщение в глобальном чате можно только
+                            двумя словами.
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата на 15 минут.
+                        </div>
+                    </div>
+
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                3.3
+                            </div>
+                            <div class="block__content__text">
+                                Рекламировать варпы разрешено только их владельцам и только в торговом чате. У варпа
+                                может быть всего 3 владельца, которые должны быть указаны на /warp warps. Игрокам,
+                                которые владельцами варпов не являются, разрешено упоминание варпов в глобальном чате
+                                только для уведомления модерации о нарушениях на варпе или наличии лагов. По вопросам
+                                пополнения товаров и благодарностей следует обращаться в личные сообщения к владельцам.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> за обход правила и завуалированную рекламу последует наказание.
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата на 15 минут.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                3.4
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено обсуждение и критика любых действий модерации проекта.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Исключение:</b> уточнения у модераторов об выданных ими предупреждениях или наказаниях.
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата на 30 минут.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                3.4.1
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено обсуждение и критика любых действий администрации, правил и проекта в целом.
+                            </div>
+                        </div>
+
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка аккаунта (используется администрацией).
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                3.5
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено дезинформировать и вводить игроков в заблуждение по игровому процессу.
+                            </div>
+                        </div>
+
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата на 30 минут.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                3.6
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено размещение ссылок на сторонние ресурсы, не относящиеся к проекту. </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Исключение:</b> ссылки на обучающий материал, личные страницы в социальных сетях.
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата на 1 час.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                3.7
+                            </div>
+                            <div class="block__content__text">
+                                Запрещена реклама любых проектов или серверов Minecraft.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> упоминание какого-либо проекта или сервера для сравнения к рекламе не
+                            относится.
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка аккаунта.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                3.8
+                            </div>
+                            <div class="block__content__text">
+                                Запрещается упоминание наркотических средств, нацистских идей, суицида, употребление
+                                уголовного (тюремного) жаргона.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> упоминание какого-либо проекта или сервера для сравнения к рекламе не
+                            относится.
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата на 1 час.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                3.9
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено выходить с сервера сразу после нарушения правил проекта (во избежание
+                                наказания)
+
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> наказание выдаётся без предупреждения!
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> если игрок не заходит на сервер в течении пяти минут - блокировка аккаунта
+                            на время, указанное в пункте правил, который был нарушен.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                3.10
+                            </div>
+                            <div class="block__content__text">
+                                Запрещены префиксы, которые содержат в себе любую рекламу, оскорбления, провокации,
+                                нецензурную лексику, эротический характер, тюремный жаргон, нацистскую символику,
+                                упоминание наркотических средств, нацистских идей и суицида.
+                            </div>
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка чата на 30 минут.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                3.11
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено после получения мута нарушать правила чата в личных сообщениях.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> наказание выдаётся без предупреждения!
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> продление мута и тюрьма на время, указанное в пункте правил, который был
+                            нарушен.
+                        </div>
+                    </div>
+                </div>
+                <div class="rules__container__block__container">
+
+                    <div class="rules__container__block__header">
+                        Игровой процесс
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                4.1
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено дестабилизировать работу сервера, вызывать падения, создавать лаги / лагозоны.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> наказание выдаётся без предупреждения!
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> снос механизма, блокировка на 7 дней.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                4.2
+                            </div>
+                            <div class="block__content__text">
+                                Создавать мультиаккаунты не запрещено, если они никак не вредят проекту. Мультиаккаунты
+                                блокируются в том случае, если с помощью них нарушают правила или обходят наказания,
+                                ограничения и запреты.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> если к основному аккаунту применена одна из следующих блокировок -
+                            мут/тюрьма/бан, на все Ваши мультиаккаунты будет выдано равносильное наказание.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                4.3
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено заманивать игроков в ловушки.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> под заманиваем подразумевается любой призыв игрока на территорию с
+                            ловушкой. Если игрок попал в ловушку, гуляя по миру, умер, будучи в режиме AFK, или его
+                            просто убили в открытом мире, то в таких случаях нарушения правила нет.
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> тюрьма от 3 часов до блокировки на 7 дней.
+
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                4.4
+                            </div>
+                            <div class="block__content__text">
+                                Запрещены любые виды обмана при оказании услуг или обмене с другими игроками.
+                            </div>
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> если нарушитель не исправляет того, что он сделал - наказание от
+                            блокировки на 7 дней до вечной блокировки.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                4.4.1
+                            </div>
+                            <div class="block__content__text">
+                                Владелец региона несет полную ответственность за свой приват и за ресурсы, находящиеся в
+                                нем. В случае грифа из-за добавления в приват, нарушитель понесет наказание при
+                                представлении доказательств его вины, но украденные ресурсы администрацией / модерацией
+                                проекта возвращены не будут! Будьте осторожны, выбирая сожителей!
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            Смотрите пункт правил 0.5
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка аккаунта от 7 дней до вечной блокировки.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                4.4.2
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено вредить регионам других игроков путем разливания жидкостей, сбрасывания
+                                зыбучих блоков, постройки стен, ограждений и копания рвов около приватов, создания
+                                впритык регионов, которые являются помехой.
+                            </div>
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> тюрьма от 6 часов до блокировки на 7 дней.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                4.4.3
+                            </div>
+                            <div class="block__content__text">
+                                Запрещается устраивать любого вида азартные игры в любых их проявлениях (казино, рулетки
+                                и т.д.).
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> викторина в чате возможна, если она согласована с помощниками
+                            администратора.
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> тюрьма от 12 часов до блокировки на 14 дней.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                4.5
+                            </div>
+                            <div class="block__content__text">
+                                Запрещается распространять и использовать игровые дыры / неисправности / баги / дюпы /
+                                вредоносное ПО в целях навредить серверу или получить с их помощью преимущества в игре.
+                                Также запрещается любое ПО, как-либо вмешивающееся в работу игры / клиента.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            Обо всех найденных игровых неисправностях надлежит сообщить администрации проекта. В
+                            зависимости от серьезности найденного бага Вам будет выдана пропорциональная тому награда в
+                            виде монет сайта или игровых ресурсов.
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка аккаунта от 7 дней до вечной блокировки на всех ресурсах
+                            проекта.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                4.6
+                            </div>
+                            <div class="block__content__text">
+                                Запрещается установка скинов / плащей содержащих: эротические элементы, нацистскую символику, оскорбления, маты, тюремный жаргон.
+                            </div>
+                        </div>
+                        
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> игроку дается 1 час на смену скина / плаща. По истечению срока - тюрьма до того момента, пока игрок не сменит скин / плащ. 
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                4.7
+                            </div>
+                            <div class="block__content__text">
+                                Запрещается мешать игроку, находясь в его регионе. Если владелец территории или модератор попросили Вас покинуть территорию - Вы обязаны подчиниться этому.    
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> для изгнания игрока с региона используйте команду /bb.
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> тюрьма на 30 минут.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                4.8
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено нарушать любые правила ивентов и арен. Правила указаны на табличках варпа ивента или арены.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> наказание выдаётся без предупреждения!
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> тюрьма на 15 минут.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                4.9
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено мешать модератору, который проводит ивенты, обмены, следит за PvP ареной.
+                            </div>
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> тюрьма на 15 минут.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                4.10
+                            </div>
+                            <div class="block__content__text">
+                                В именах мобов или животных, в именных свитках, а также в названиях блоков и предметов запрещены: ненормативная лексика, маты, оскорбления, реклама других проектов, термины сексуального характера.
+                            </div>
+                        </div>
+                        
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> тюрьма на 6 часов, удаление животного / моба / предмета.
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                4.11
+                            </div>
+                            <div class="block__content__text">
+                                Запрещается намеренно дезинформировать / вводить в заблуждение администрацию / модерацию проекта для получения какой-либо выгоды или в других корыстных целях.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> наказание выдаётся без предупреждения!
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> блокировка аккаунта от 1 до 7 дней.
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="rules__container__block__container">
+
+                    <div class="rules__container__block__header">
+                        Правила строительства
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                5.1
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено строительство половых органов, матерных слов и оскорблений, фашистской символики, а также устанавливать в вашем регионе таблички / информационные панели, содержащие маты / оскорбления / ненормативную лексику.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Примечание:</b> наказание выдаётся без предупреждения!
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> тюрьма от 5 часов до блокировка на 3 дня, снос постройки. 
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                5.2
+                            </div>
+                            <div class="block__content__text">
+                                Запрещена постройка сооружений, возведенных в воздухе.
+                            </div>
+                        </div>
+                        <div class="block__content__note">
+                            <b>Исключения:</b> летающие острова, сущности и объекты с возможностью полёта, а так же авиационная техника.
+                            <b>Примечание:</b> старший модератор вправе разрешить вашей постройте существовать, в том случае, если она подходит по тематике сервера и имеет приятный, эстетичный внешний вид.
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> выдача времени на исправление сроком в 24 часа. Если игрок не исправляется за это время - 5 часов тюрьмы и снос постройки. 
+                        </div>
+                    </div>
+                    <div class="rules__container__block__content">
+                        <div class="block__content__wrap">
+                            <div class="block__content__number">
+                                5.3
+                            </div>
+                            <div class="block__content__text">
+                                Запрещено строительство столбов в небо, домов "коробок" состоящих целиком из одного материала. Если ваш дом находится в стадии строительства, установите табличку, оповещающую об этом! Регионы, владелец которых отсутствовал в игре более 30 дней, удаляются и регенерируются.
+                            </div>
+                        </div>
+                        <div class="block__content__penalty">
+                            <b>Наказание:</b> снос постройки. 
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a class="logo__link__main" href="#">
+        </a>
+        <div class="copyright">
+            <div class="copyright__up">© 2020 ERA CRAFT</div>
+            <div class="copyright__down">
+                <p class="copyright__text">
+                    Все права защищены. Копирование материалов сайта запрещено.
+                </p>
+                <p class="copyright__text">
+                    Мы предоставляем ознакомительный и бесплатный вариант игры Minecraft.
+                </p>
+                <p class="copyright__text">
+                    Приобрести полную версию можно на сайте <a href="https://www.minecraft.net/ru-ru" target="_blank">minecraft.net</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
